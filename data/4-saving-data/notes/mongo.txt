@@ -1,0 +1,42 @@
+const { MongoClient } = require("mongodb");
+const ObjectId = require("mongodb").ObjectId;
+  
+
+  // config mongodb connection
+const uri = "mongodb://127.0.0.1:27017";
+const dbName = "latlon";
+
+const client = new MongoClient(uri, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
+
+
+  // client.connect((error, result) => {
+  //   if (error) {
+  //     return console.log("koneksi gagal");
+  //   }
+  //   // pilih database
+  //   const db = client.db(dbName);
+
+  //   db.collection("latlon")
+  //     .insertMany([
+  //       {
+  //         latitude: lat,
+  //       },
+  //       {
+  //         longitude: lon,
+  //       },
+  //     ])
+  //     .then((res) => console.log(res))
+  //     .catch((err) => console.log("error"));
+
+  //   console.log(
+  //     db
+  //       .collection("latlon")
+  //       .find()
+  //       .then((res) => console.log(res))
+  //       .catch((err) => console.log(err))
+  //   );
+  //   // console.log(showData);
+  // });

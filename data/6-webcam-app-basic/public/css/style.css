@@ -1,0 +1,47 @@
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: brown;
+  color: #fff;
+  border-radius: 20px;
+  padding: 2rem;
+  gap: 4rem;
+}
+
+.content-p {
+  display: flex;
+  gap: 2rem;
+}
+
+.action {
+  display: inline-flex;
+  margin: 2rem;
+  transition: all 0.3s;
+  gap: 2rem;
+}
+
+.action a {
+  text-decoration: none;
+  padding: 7px 12px;
+  border-radius: 7px;
+  box-shadow: 1px 2px 6px black;
+}
+.action a:nth-child(1):hover {
+  text-decoration: underline;
+  font-weight: bold;
+  color: green;
+}
+.action a:nth-child(2):hover {
+  text-decoration: underline;
+  font-weight: bold;
+  color: red;
+}
